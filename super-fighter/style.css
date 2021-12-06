@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+   background: border-box radial-gradient(rgba(210, 210, 210, 0.2), rgba(42, 42, 42, 0.8)),
+    center / cover no-repeat url('images/ring.jpeg') fixed;
+
+    color: white;
+}
+
+header {
+    text-align: center;
+}
+
+main {
+    max-width: 1080px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+figure {
+    margin: 0;
+    padding: 1em 2em;
+}
+
+img {
+    max-width: 100%;
+}
+
+figcaption {
+    font-size: 2em;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        justify-content: space-around;
+    }
+    
+    main figure {
+        flex-basis: 45%;
+        flex-grow: 0;
+    }
+}
